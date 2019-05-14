@@ -1,3 +1,5 @@
+[View Raw for best view of input and outputs]
+
 ------------------------------------------------------------------------------------------------------
 quora.py; Problem Description:
 Quora uses a combination of machine learning (ML) algorithms and moderation to ensure high-quality content on the site. High answer quality has helped Quora distinguish itself from other Q&A sites on the web.  
@@ -101,6 +103,37 @@ Sample Output
 26.82
 27.13
 27.68
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+grades.py;
+
+This challenge is based on real school data of the CBSE Class 12 examination conducted in the year 2013. You are given the grades obtained by students with specific but popular combinations of subjects (and all these students had opted for Mathematics). Their grades in four subjects are known to you. However their grade in Mathematics (i.e, the fifth subject) is hidden.
+
+The records provided to you are the grades obtained by students who had opted for the following combinations of subjects or courses and obtained a passing grade in each subject. The individual subjects in the data are: 
+English, Physics, Chemistry, Mathematics, Computer Science, Biology, Physical Education, Economics, Accountancy and Business Studies.
+
+The most dominant subject combinations, account for approximately 99% of the data are:
+
+English, Physics, Chemistry, Mathematics, Computer Science    
+English, Physics, Chemistry, Mathematics, Physical Education    
+English, Physics, Chemistry, Mathematics, Economics    
+English, Physics, Chemistry, Mathematics, Biology  
+English, Economics, Accountancy, Mathematics, Business Studies   
+
+Input Format
+
+The first line will be an integer N. N lines follow each line being a valid JSON object. The following fields of raw data are given in json.
+
+SerialNumber (Numeric): The identifier of the student record. This is provided just for identification purposes and does not have any direct use.  
+English (numeric) : The grade (between 1 and 8) obtained in English. This will always be present.  
+Three more numeric fields from among: Physics, Chemistry, ComputerScience, Hindi, Biology, PhysicalEducation, Economics, Accountancy, BusinessStudies.  
+The input for each record has the grade for all subjects opted by a student, other than Mathematics which you have to predict as the answer.
+
+Output Format
+
+For each student record that is given as a JSON object, containing the grade obtained in four subjects, output the predicted grade in Mathematics (this will be a numeral between 1 and 8, both inclusive) in a newline.
 
 ------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------
