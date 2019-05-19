@@ -4,7 +4,7 @@ import ast
 from sklearn.linear_model import SGDClassifier
 
 # Getting training data
-train_dir = 'training.json'
+train_dir = 'trainingdata.txt'
 f = open(train_dir, "r")
 data = []
 for x in f:
